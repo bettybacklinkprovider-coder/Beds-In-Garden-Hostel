@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PageRoute, Room } from '../types';
-import { ROOMS, HOSTEL_INFO } from '../data/hostelData';
+import { ROOMS, HOSTEL_INFO, heroGardenHostel } from '../data/hostelData';
 import { 
   Bed, 
   Users, 
@@ -87,7 +87,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
                 alt={room.name}
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = '/src/assets/images/hero_garden_hostel_1790924389807.jpg';
+                  (e.target as HTMLImageElement).src = heroGardenHostel;
                 }}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

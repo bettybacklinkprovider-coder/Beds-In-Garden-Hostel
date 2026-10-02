@@ -1,5 +1,20 @@
 import { Room, GalleryImage, IpohAttraction, FacilityItem } from '../types';
 
+import aboutHostelCourtyard from '../assets/images/about_hostel_courtyard_1790924403884.jpg';
+import facilityCleanBathrooms from '../assets/images/facility_clean_bathrooms_1790934238969.jpg';
+import facilityCommonLounge from '../assets/images/facility_common_lounge_1790934227707.jpg';
+import facilityGuestSecurity from '../assets/images/facility_guest_security_1790934250251.jpg';
+import facilityLushGarden from '../assets/images/facility_lush_garden_1790934216103.jpg';
+import facilityOrthopedicBeds from '../assets/images/facility_orthopedic_beds_1790934204560.jpg';
+import facilityWifiCoworking from '../assets/images/facility_wifi_coworking_1790934189632.jpg';
+import galleryCommonLounge from '../assets/images/gallery_common_lounge_1790924452295.jpg';
+import heroGardenHostel from '../assets/images/hero_garden_hostel_1790924389807.jpg';
+import ipohOldTownAttractions from '../assets/images/ipoh_old_town_attractions_1790924463823.jpg';
+import roomMixedPodDorm from '../assets/images/room_mixed_pod_dorm_1790924420600.jpg';
+import roomPrivateGardenSuite from '../assets/images/room_private_garden_suite_1790924438306.jpg';
+
+export { heroGardenHostel, aboutHostelCourtyard };
+
 export const HOSTEL_INFO = {
   name: 'Beds In Garden Hostel',
   tagline: 'Your Luxury Garden Oasis in Historic Ipoh',
@@ -33,7 +48,7 @@ export const ROOMS: Room[] = [
     bedType: 'Single Capsule Pod',
     bathroomType: 'Shared Luxury Shower Suites',
     sizeSqM: 28,
-    image: '/src/assets/images/room_mixed_pod_dorm_1790924420600.jpg',
+    image: roomMixedPodDorm,
     facilities: ['Air Conditioning', 'High-Speed Wi-Fi', 'Blackout Curtain', 'Keycard Locker', 'Reading Lamp', 'Universal Socket'],
     features: ['10-inch Orthopedic Mattress', 'Sound-Dampened Wood Pod', 'Daily Housekeeping', 'Garden View Access'],
     isPopular: true,
@@ -49,7 +64,7 @@ export const ROOMS: Room[] = [
     bedType: 'Single Capsule Pod',
     bathroomType: 'Ensuite Female Shower Suite',
     sizeSqM: 26,
-    image: '/src/assets/images/about_hostel_courtyard_1790924403884.jpg',
+    image: aboutHostelCourtyard,
     facilities: ['Female Only', 'Air Conditioning', 'Vanity & Hairdryer', 'Blackout Curtain', 'Secure Keycard', 'Wi-Fi 500Mbps'],
     features: ['Dedicated Vanity Desk', 'Courtyard Garden Window', 'Complimentary Organic Toiletries', 'Extra Soft Linen'],
     isPopular: true,
@@ -65,7 +80,7 @@ export const ROOMS: Room[] = [
     bedType: '1 King Size Bed',
     bathroomType: 'Private Bathroom (Rain Shower)',
     sizeSqM: 32,
-    image: '/src/assets/images/room_private_garden_suite_1790924438306.jpg',
+    image: roomPrivateGardenSuite,
     facilities: ['Private Ensuite Bath', 'Private Patio', 'King Bed', 'Smart TV', 'Air Conditioning', 'Mini Fridge', 'Work Desk'],
     features: ['Direct Courtyard Access', 'Rainfall Overhead Shower', 'Boutique Coffee Machine', 'Hypoallergenic Pillows'],
     isPopular: true,
@@ -81,7 +96,7 @@ export const ROOMS: Room[] = [
     bedType: '2 Single Comfort Beds',
     bathroomType: 'Shared Luxury Shower Suites',
     sizeSqM: 22,
-    image: '/src/assets/images/room_private_garden_suite_1790924438306.jpg',
+    image: roomPrivateGardenSuite,
     facilities: ['2 Twin Beds', 'Air Conditioning', 'Dual Work Desks', 'Soundproof Wall', 'Free High-Speed Wi-Fi'],
     features: ['Garden Breeze Ventilation', 'Dual Wardrobes', 'Personal Reading Lamps', 'Daily Towel Refresh'],
   }
@@ -94,7 +109,7 @@ export const FACILITIES: FacilityItem[] = [
     description: 'Seamless 500Mbps Mesh Wi-Fi coverage across all rooms, garden lounge, and workstations.',
     iconName: 'Wifi',
     badge: '500 Mbps',
-    image: '/src/assets/images/facility_wifi_coworking_1790934189632.jpg'
+    image: facilityWifiCoworking
   },
   {
     id: 'beds',
@@ -102,7 +117,7 @@ export const FACILITIES: FacilityItem[] = [
     description: '10-inch high-density mattresses with 100% Egyptian cotton linens and hypoallergenic pillows.',
     iconName: 'Bed',
     badge: 'Luxury Comfort',
-    image: '/src/assets/images/facility_orthopedic_beds_1790934204560.jpg'
+    image: facilityOrthopedicBeds
   },
   {
     id: 'garden',
@@ -110,7 +125,7 @@ export const FACILITIES: FacilityItem[] = [
     description: 'Serene outdoor courtyard filled with tropical flora, hammock swings, ambient lights, and outdoor seating.',
     iconName: 'Trees',
     badge: 'Outdoor Oasis',
-    image: '/src/assets/images/facility_lush_garden_1790934216103.jpg'
+    image: facilityLushGarden
   },
   {
     id: 'common',
@@ -118,7 +133,7 @@ export const FACILITIES: FacilityItem[] = [
     description: 'Spacious air-conditioned lounge with ergonomic desks, power outlets, book exchange library, and games.',
     iconName: 'Coffee',
     badge: '24/7 Access',
-    image: '/src/assets/images/facility_common_lounge_1790934227707.jpg'
+    image: facilityCommonLounge
   },
   {
     id: 'clean',
@@ -126,7 +141,7 @@ export const FACILITIES: FacilityItem[] = [
     description: 'Sparkling clean rain shower bathrooms with hot water pressure, organic shampoo, and daily sanitation.',
     iconName: 'Sparkles',
     badge: 'Sparkling Clean',
-    image: '/src/assets/images/facility_clean_bathrooms_1790934238969.jpg'
+    image: facilityCleanBathrooms
   },
   {
     id: 'amenities',
@@ -134,7 +149,7 @@ export const FACILITIES: FacilityItem[] = [
     description: 'Keycard electronic pod access, 24/7 CCTV surveillance, free luggage storage, self-serve laundry, and coffee/tea.',
     iconName: 'ShieldCheck',
     badge: '24/7 Security',
-    image: '/src/assets/images/facility_guest_security_1790934250251.jpg'
+    image: facilityGuestSecurity
   }
 ];
 
@@ -144,7 +159,7 @@ export const IPOH_ATTRACTIONS: IpohAttraction[] = [
     title: 'Concave Street & Old Town Heritage',
     category: 'Heritage & Culture',
     distance: '5 min walk (600m)',
-    image: '/src/assets/images/ipoh_old_town_attractions_1790924463823.jpg',
+    image: ipohOldTownAttractions,
     description: 'Walk through Ipoh’s famous vibrant alleyways filled with historic shophouses, artisanal cafes, souvenir stalls, and iconic mural street art.',
     tag: 'Must Visit'
   },
@@ -153,7 +168,7 @@ export const IPOH_ATTRACTIONS: IpohAttraction[] = [
     title: 'Authentic Ipoh White Coffee',
     category: 'Gastronomy & Culinary',
     distance: '4 min walk (450m)',
-    image: '/src/assets/images/gallery_common_lounge_1790924452295.jpg',
+    image: galleryCommonLounge,
     description: 'Savor world-famous Ipoh white coffee brewed with roasted coffee beans in palm oil margarine, served with traditional egg tart and kaya toast.',
     tag: 'Foodie Choice'
   },
@@ -162,7 +177,7 @@ export const IPOH_ATTRACTIONS: IpohAttraction[] = [
     title: 'Perak Tong & Kek Lok Tong Caves',
     category: 'Nature & Adventure',
     distance: '10 min drive',
-    image: '/src/assets/images/hero_garden_hostel_1790924389807.jpg',
+    image: heroGardenHostel,
     description: 'Explore breathtaking ancient limestone cave temples featuring intricate Buddhist statues, reflection ponds, and panoramic mountain views.',
     tag: 'Scenic View'
   },
@@ -171,7 +186,7 @@ export const IPOH_ATTRACTIONS: IpohAttraction[] = [
     title: 'Jubilee Park & Gerbang Malam',
     category: 'Nightlife & Shopping',
     distance: '2 min walk (200m)',
-    image: '/src/assets/images/about_hostel_courtyard_1790924403884.jpg',
+    image: aboutHostelCourtyard,
     description: 'Located right next door to Jubilee Park! Stroll through Ipoh’s lively night market for local street snacks, handicrafts, and evening walks.',
     tag: 'Right Next Door'
   }
@@ -183,7 +198,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Tranquil Tropical Garden Courtyard',
     category: 'garden',
     categoryLabel: 'Garden & Courtyard',
-    image: '/src/assets/images/hero_garden_hostel_1790924389807.jpg',
+    image: heroGardenHostel,
     description: 'Our lush garden courtyard illuminated by ambient fairy lights at twilight — the heart of Beds In Garden Hostel.'
   },
   {
@@ -191,7 +206,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Sunny Outdoor Deck & Seating',
     category: 'garden',
     categoryLabel: 'Garden & Courtyard',
-    image: '/src/assets/images/about_hostel_courtyard_1790924403884.jpg',
+    image: aboutHostelCourtyard,
     description: 'Relax with your morning coffee or read a book under the shade of tropical trees.'
   },
   {
@@ -199,7 +214,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Deluxe Teak Wood Privacy Pod Bed',
     category: 'rooms',
     categoryLabel: 'Bedrooms & Pods',
-    image: '/src/assets/images/room_mixed_pod_dorm_1790924420600.jpg',
+    image: roomMixedPodDorm,
     description: 'Individual sleeping pod equipped with blackout curtain, soft duvet, LED light, and charging sockets.'
   },
   {
@@ -207,7 +222,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Private Deluxe Garden Suite Room',
     category: 'rooms',
     categoryLabel: 'Bedrooms & Pods',
-    image: '/src/assets/images/room_private_garden_suite_1790924438306.jpg',
+    image: roomPrivateGardenSuite,
     description: 'Spacious king-bed bedroom overlooking lush greenery with ensuite luxury amenities.'
   },
   {
@@ -215,7 +230,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Co-Working & Reading Lounge',
     category: 'lounge',
     categoryLabel: 'Common Lounge',
-    image: '/src/assets/images/gallery_common_lounge_1790924452295.jpg',
+    image: galleryCommonLounge,
     description: 'Air-conditioned common lounge with cozy plush seating, high-speed Wi-Fi, and complimentary artisan coffee.'
   },
   {
@@ -223,7 +238,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Historic Ipoh Old Town Heritage',
     category: 'ipoh',
     categoryLabel: 'Ipoh Surroundings',
-    image: '/src/assets/images/ipoh_old_town_attractions_1790924463823.jpg',
+    image: ipohOldTownAttractions,
     description: 'Vibrant street art and colonial shophouses located just minutes from the hostel.'
   },
   {
@@ -231,7 +246,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Garden Patio Sunset Relax Zone',
     category: 'garden',
     categoryLabel: 'Garden & Courtyard',
-    image: '/src/assets/images/room_private_garden_suite_1790924438306.jpg',
+    image: roomPrivateGardenSuite,
     description: 'Serene garden corner designed for evening conversations and social gatherings.'
   },
   {
@@ -239,7 +254,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     title: 'Boutique Coffee & Tea Corner',
     category: 'amenities',
     categoryLabel: 'Amenities & Facilities',
-    image: '/src/assets/images/gallery_common_lounge_1790924452295.jpg',
+    image: galleryCommonLounge,
     description: 'Self-serve artisan espresso coffee, organic tea infusions, and purified drinking water.'
   }
 ];

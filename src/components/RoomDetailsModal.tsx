@@ -1,5 +1,6 @@
 import React from 'react';
 import { Room } from '../types';
+import { heroGardenHostel } from '../data/hostelData';
 import { X, Check, Bed, Users, Shield, Sparkles, Calendar } from 'lucide-react';
 
 interface RoomDetailsModalProps {
@@ -26,7 +27,7 @@ export const RoomDetailsModal: React.FC<RoomDetailsModalProps> = ({
             alt={room.name}
             referrerPolicy="no-referrer"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/src/assets/images/hero_garden_hostel_1790924389807.jpg';
+              (e.target as HTMLImageElement).src = heroGardenHostel;
             }}
             className="w-full h-full object-cover"
           />

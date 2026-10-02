@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageRoute, Room } from '../types';
-import { HOSTEL_INFO, ROOMS, FACILITIES, IPOH_ATTRACTIONS, TESTIMONIALS } from '../data/hostelData';
+import { HOSTEL_INFO, ROOMS, FACILITIES, IPOH_ATTRACTIONS, TESTIMONIALS, heroGardenHostel, aboutHostelCourtyard } from '../data/hostelData';
 import { 
   Calendar, 
   ArrowRight, 
@@ -51,7 +51,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         {/* Background Image with Dark Purple Scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_garden_hostel_1790924389807.jpg"
+            src={heroGardenHostel}
             alt="Beds In Garden Hostel Ipoh"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover scale-105 filter brightness-75"
@@ -131,7 +131,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-500" />
             <div className="relative rounded-2xl overflow-hidden border border-purple-800/50 shadow-2xl bg-slate-950">
               <img
-                src="/src/assets/images/about_hostel_courtyard_1790924403884.jpg"
+                src={aboutHostelCourtyard}
                 alt="Beds In Garden Hostel Courtyard"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700"
@@ -232,7 +232,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     alt={room.name}
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = '/src/assets/images/hero_garden_hostel_1790924389807.jpg';
+                      (e.target as HTMLImageElement).src = heroGardenHostel;
                     }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
