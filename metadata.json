@@ -1,0 +1,8 @@
+{
+  "name": "Beds In Garden Hostel",
+  "description": "Premium, modern, elegant boutique hostel in Ipoh, Perak, Malaysia featuring lush garden courtyards, luxury pods, private suites, and top amenities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
